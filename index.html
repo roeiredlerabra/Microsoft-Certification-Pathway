@@ -12,21 +12,82 @@
             background-color: #f0f4f8;
             color: #333;
         }
+
         .cert-box {
             height: 100%;
             transition: all 0.3s ease;
         }
+
         .cert-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .expert {
             border: 2px solid #FFD700;
         }
+
         .prerequisite::before {
             content: '*';
             color: #d4af37;
             margin-left: 2px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #1e1e1e;
+                color: #ddd;
+            }
+
+            .cert-box {
+                background-color: #2e2e2e;
+                color: #ddd;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            }
+
+            .cert-box:hover {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            }
+
+            .text-blue-600, .text-blue-800 {
+                color: #8ab4f8 !important;
+            }
+
+            .bg-blue-100 {
+                background-color: #29434e !important;
+            }
+
+            .bg-blue-800 {
+                background-color: #17465e !important;
+            }
+
+            .text-green-600, .text-green-800 {
+                color: #a5d6a7 !important;
+            }
+
+            .bg-green-100 {
+                background-color: #2e7d32 !important;
+            }
+
+            .bg-green-800 {
+                background-color: #1b5e20 !important;
+            }
+
+            .text-yellow-700, .text-yellow-800 {
+                color: #ffd54f !important;
+            }
+
+            .bg-yellow-50 {
+                background-color: #4e342e !important;
+            }
+
+            .bg-yellow-200 {
+                background-color: #6d4c41 !important;
+            }
+
+            .text-gray-600 {
+                color: #aaa !important;
+            }
         }
     </style>
 </head>
@@ -58,11 +119,11 @@
                     </div>
                     <div class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded mt-2">PL-500</div>
                 </div>
-                <div class="cert-box expert  bg-yellow-50 rounded-lg p-4 flex flex-col justify-between shadow-md">
+                <div class="cert-box expert bg-yellow-50 rounded-lg p-4 flex flex-col justify-between shadow-md">
                     <div>
                         <h3 class="font-bold text-yellow-700">Power Platform Solution Architect Expert</h3>
                         <p class="text-sm mt-2 text-yellow-600">Deepen your technical skills</p>
-                                                <p class="text-xs prerequisite mt-2 text-gray-600">Prerequisites: PL-400 or PL-200</p>
+                        <p class="text-xs prerequisite mt-2 text-gray-600">Prerequisites: PL-400 or PL-200</p>
                     </div>
                     <div class="text-sm bg-yellow-200 text-yellow-800 px-2 py-1 rounded mt-2">PL-600</div>
                 </div>
@@ -79,7 +140,7 @@
                     </div>
                     <div class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded mt-2">PL-900</div>
                 </div>
-                  <div class="cert-box bg-white rounded-lg p-4 flex flex-col justify-between shadow-md">
+                <div class="cert-box bg-white rounded-lg p-4 flex flex-col justify-between shadow-md">
                     <div>
                         <h3 class="font-bold text-green-600">Dynamics 365 Fundamentals (CRM)</h3>
                         <p class="text-sm mt-2 text-gray-600">Master the basics</p>
@@ -87,7 +148,6 @@
                     <div class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded mt-2">MB-910</div>
                 </div>
             </div>
-            
         </div>
 
         <div class="mt-8 text-center text-gray-600">
